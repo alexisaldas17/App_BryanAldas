@@ -44,18 +44,21 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
-
         Bundle bundle = getIntent().getExtras();
-        etNombre.setText(bundle.getString("nombre"));
-        etApellido.setText(bundle.getString("apellido"));
-        etBase.setText(bundle.getString("base"));
-        etExponente.setText(bundle.getString("exponente"));
+        if(!bundle.isEmpty()){
+
+            etNombre.setText(bundle.getString("nombre"));
+            etApellido.setText(bundle.getString("apellido"));
+            etBase.setText(bundle.getString("base"));
+            etExponente.setText(bundle.getString("exponente"));
 
 
-        etFactorial.setText(factorial(Integer.parseInt(bundle.getString("numero"))));
+            etFactorial.setText(factorial(Integer.parseInt(bundle.getString("numero"))));
 
-        etPotencia.setText(DevolverPotencia(Integer.parseInt(bundle.getString("base")),
-                                            Integer.parseInt(bundle.getString("exponente"))));
+            etPotencia.setText(DevolverPotencia(Integer.parseInt(bundle.getString("base")),
+                    Integer.parseInt(bundle.getString("exponente"))));
+        }
+
 
 
     }
