@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">App_BryanAldas</string>
+
+    <string name="button_text_siguiente">SIGUIENTE</string>
+    <string name="button_text_CERRAR">CERRAR</string>
+    <string name="button_text_mostrarResultados">MOSTRAR RESULTADOS</string>
+
+    <string name="et_hint_Nombre">Ingrese Nombre</string>
+    <string name="et_hint_Apellido">Ingrese Apellido</string>
+    <string name="et_hint_Base">Ingrese Base</string>
+    <string name="et_hint_Exponente">Ingrese Exponente</string>
+    <string name="et_hint_Numero">Ingrese Numero</string>
+</resources>
