@@ -31,11 +31,6 @@ public class SegundaActivity extends AppCompatActivity {
         btnSiguiente = findViewById(R.id.buttonSiguienteSA);
         btnCerrar = findViewById(R.id.buttonCerrarSA);
 
-        btnCerrar.setEnabled(false);
-
-        Bundle bundle = getIntent().getExtras();
-        etNombre.setText(bundle.getString("nombreSA"));
-        etBase.setText(bundle.getString("baseSA"));
 
         resultado = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),
                 new ActivityResultCallback<ActivityResult>() {
